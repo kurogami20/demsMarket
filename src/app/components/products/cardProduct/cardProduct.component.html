@@ -1,15 +1,15 @@
 <article
-  class="w-full max-w-sm bg-neutral-primary-soft p-6 border border-default rounded-base shadow-xs"
+  class="w-full max-w-sm bg-neutral-primary-soft p-6 border border-default rounded-base shadow-xs flex flex-col items-center"
 >
-  <a href="#">
+  <a routerLink="/product/{{ product.id }}">
     <img
-      class="rounded-base mb-6"
+      class="rounded-base mb-6 object-cover h-48 max-w-full md:h-58"
       src="{{ product.image }}"
       alt="product image"
     />
   </a>
   <div>
-    <a href="#">
+    <a routerLink="/product/{{ product.id }}">
       <h1 class="text-xl text-heading font-semibold tracking-tight">
         {{ product.title }}
       </h1>
